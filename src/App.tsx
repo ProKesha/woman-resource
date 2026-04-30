@@ -77,7 +77,6 @@ function HomePage() {
       <Program />
       <SectionCTA />
       <ForWhom />
-      <Pricing />
       <FAQ />
       <FinalCTA />
     </main>
@@ -100,9 +99,6 @@ function Hero() {
             Жива зустріч, щоб краще зрозуміти себе, підтримати тіло й повернути
             відчуття внутрішньої опори.
           </p>
-          <div className="heroActions">
-            <PaymentButton />
-          </div>
         </div>
         <div className="heroPanel" aria-label="Деталі події">
           <div className="dateCard">
@@ -184,6 +180,7 @@ function SectionCTA() {
         <div>
           <p className="sectionLabel">Місця обмежені</p>
           <h2>Забронюй участь зараз</h2>
+          <p className="ctaPrice">Вартість участі: 1500 грн</p>
         </div>
         <PaymentButton />
       </div>
@@ -209,27 +206,6 @@ function ForWhom() {
               <p key={point}>{point}</p>
             ))}
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Pricing() {
-  return (
-    <section className="section price">
-      <div className="container priceGrid">
-        <div>
-          <p className="sectionLabel">Участь</p>
-          <h2>Оплата та бронювання</h2>
-          <p className="sectionText">
-            Натисни “Оплатити”, щоб перейти до бронювання місця на зустріч.
-          </p>
-        </div>
-        <div className="priceCard">
-          <span className="priceCaption">Вартість участі</span>
-          <strong>Оплата онлайн</strong>
-          <PaymentButton />
         </div>
       </div>
     </section>
@@ -265,6 +241,7 @@ function FinalCTA() {
         <p>
           20 травня · 3 години · нумерологія, нутріціологія та чесна розмова.
         </p>
+        <p className="finalPrice">Вартість участі: 1500 грн</p>
         <PaymentButton variant="light" />
       </div>
     </section>

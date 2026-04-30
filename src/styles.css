@@ -92,8 +92,7 @@ a {
 
 .eventMeta,
 .sectionLabel,
-.panelLabel,
-.priceCaption {
+.panelLabel {
   max-width: 31ch;
   margin: 0 0 var(--space-2);
   color: var(--orange-dark);
@@ -244,7 +243,6 @@ h3 {
 
 .heroPanel,
 .programBlock,
-.priceCard,
 .pointList p,
 .faqList details,
 .successCard {
@@ -308,7 +306,6 @@ h3 {
 
 .sectionHeader h2,
 .split h2,
-.priceGrid h2,
 .ctaBox h2 {
   max-width: 12ch;
 }
@@ -406,26 +403,25 @@ details p {
 }
 
 .inlineCta h2 {
-  margin-bottom: 0;
+  margin-bottom: var(--space-1);
   font-size: clamp(1.9rem, 8vw, 2.4rem);
 }
 
-.price {
-  background: #fffdf8;
+.ctaPrice,
+.finalPrice {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
-.priceCard {
-  border-radius: 8px;
-  padding: var(--space-2);
-}
-
-.priceCard strong {
-  display: block;
-  margin: var(--space-1) 0 var(--space-2);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.1rem, 9vw, 3.2rem);
-  line-height: 0.96;
+.ctaPrice {
   color: var(--charcoal);
+}
+
+.finalPrice {
+  margin-bottom: var(--space-2);
+  color: #fff;
 }
 
 .faqList {
@@ -493,7 +489,6 @@ details p {
   .eventMeta,
   .sectionLabel,
   .panelLabel,
-  .priceCaption,
   .heroLead,
   .sectionText,
   .heroPanel p,
@@ -519,7 +514,6 @@ details p {
   .heroPanel h2,
   .sectionHeader h2,
   .split h2,
-  .priceGrid h2,
   .ctaBox h2 {
     max-width: none;
   }
@@ -561,8 +555,7 @@ details p {
     padding: var(--space-4);
   }
 
-  .split,
-  .priceGrid {
+  .split {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
     align-items: start;
   }
